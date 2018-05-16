@@ -1,0 +1,172 @@
+@import 'variables';
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/GothamPro-Bold.eot');
+    src: url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamPro-Bold.woff') format('woff'),
+        url('../fonts/GothamPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/GothamPro-Light.eot');
+    src: url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamPro-Light.woff') format('woff'),
+        url('../fonts/GothamPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/GothamPro-Medium.eot');
+    src: url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamPro-Medium.woff') format('woff'),
+        url('../fonts/GothamPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+html,
+body,
+h1, h2, h3, h4, h5, h6,
+ul,
+li,
+p,
+img{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+	display: block;
+}
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    min-height: 100%;
+    font-family: 'Gotham Pro', sans-serif;
+		font-weight: 300;
+		background-color: $black;
+}
+h2{
+	font-size: calc( (100vw - 320px) / (1800 - 320) * (36 - 20) + 20px );
+  font-weight: bold;
+}
+p{
+  font-size: calc( (100vw - 320px) / (1800 - 320) * (14 - 12) + 12px );
+}
+a{
+	display: block;
+  font-size: calc( (100vw - 320px) / (1800 - 320) * (16 - 14) + 14px );
+  font-weight: 500;
+	&:hover{
+		text-decoration: none;
+	}
+}
+img {
+	border-style: none;
+	width: 100%;
+}
+
+/* Bootstrap margin and paddings */
+
+.container,
+.container-fluid{
+  padding-right: 0;
+  padding-left: 0;
+}
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+[class^='col-'] {
+  padding-left: 0;
+  padding-right: 0;
+
+}
+header [class^='col-'],
+footer [class^='col-'],
+.main-banner [class^='col-']{
+  height: auto;
+}
+
+/* Main settings for grid items (rectangles) */
+
+.content-wrapper{
+  height: 245px;
+  width: 100%;
+  padding: 40px;
+}
+.height-2{
+  height: 490px;
+}
+.height-3{
+  height: 735px;
+}
+
+
+/* Colors */
+
+.bg-white{
+  background-color: #ffffff;
+}
+.bg-black p{
+  color: #ffffff;
+}
+.bg-gray{
+  background-color: $gray;
+}
+.bg-yellow{
+  background-color: $yellow;
+}
+.bg-black{
+  background-color: $black;
+}
+.bg-white h2,
+.bg-white h3,
+.bg-white p,
+.bg-white a,
+.bg-gray h2,
+.bg-gray h3,
+.bg-gray p,
+.bg-gray a,
+.bg-yellow h2,
+.bg-yellow h3,
+.bg-yellow p,
+.bg-yellow a{
+  color: $black;
+}
+.bg-black h2,
+.bg-black h3,
+.bg-black a{
+  color: $yellow;
+}
+.bg-white a:hover{
+  color: $yellow;
+}
+
+@media screen and (max-width: 575px) {
+  .content-wrapper{
+    padding: 35px 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+// !!! блоки с новостями - двойная высота!
+// @media screen and (max-width: 991px) {
+//   .height-2,
+//   .height-3{
+//     height: 735px;
+//   }
+// }

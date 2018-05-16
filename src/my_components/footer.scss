@@ -1,0 +1,49 @@
+@import 'variables';
+
+.footerfix{
+  height: 93px;
+}
+footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  .container,
+  .container-fluid{
+    padding: 15px 40px 35px;
+  }
+  a {
+    color: $yellow;
+    &:hover{
+      color: white;
+    }
+  }
+  .logo-holder{
+    width: 120px;
+  }
+  .socials-icon{
+    margin-right: 45px;
+  }
+  .phone{
+    color: white;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer{
+    .socials-icon{
+      margin-right: 30px;
+    }
+    .logo-holder{
+      width: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  header{
+    .container-fluid{
+      padding: 15px 20px 35px;
+    }
+  }
+}
