@@ -3,11 +3,11 @@ $(document).ready(function(){
 		$("nav").slideToggle();
 	})
 });
-// $(window).resize(function() {
-// 	if ($(window).width() >= 576){
-// 		$("nav").css("display","block");
-// 	}
-// 	if ($(window).width() < 576){
-// 		$("nav").css("display","none");
-// 	}
-// });
+$(window).resize(function() {
+	if ($(window).width() >= 576){
+		$("nav").css("display","block");
+	}
+	if ($(window).width() < 576){
+		$("nav").css("display","none");
+	}
+});

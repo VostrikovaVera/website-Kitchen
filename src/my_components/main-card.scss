@@ -1,0 +1,60 @@
+@import 'variables';
+
+.main-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .main-card-headline{
+    display: flex;
+    align-items: center;
+  }
+  h2{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 3%;
+  }
+  .card-link-more{
+    align-self: flex-end;
+    font-size: calc( (100vw - 320px) / (1800 - 320) * (14 - 12) + 12px );
+    text-decoration: underline;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .link-all-services{
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+    &:hover p{
+      text-decoration: none;
+    }
+  }
+  .link-all-services p{
+    color: $yellow;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-left: 7%;
+  }
+}
+.bg-pic-1:before {
+    width: 2000px;
+    height: 100%;
+    content: '';
+    position: absolute;
+    z-index: -20;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    background: url(../img/services.png) repeat-y;
+}
+.bg-pic-2:before {
+    width: 2000px;
+    height: 100%;
+    content: '';
+    position: absolute;
+    z-index: -20;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: url(../img/bg-news.png) repeat-y;
+}

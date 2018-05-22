@@ -46,14 +46,14 @@ html {
     height: 100%;
 }
 body {
-    position: relative;
+    position: relative; // for footer at bottom
     min-height: 100%;
     font-family: 'Gotham Pro', sans-serif;
 		font-weight: 300;
 		background-color: $black;
 }
 h2{
-	font-size: calc( (100vw - 320px) / (1800 - 320) * (36 - 20) + 20px );
+	font-size: calc( (100vw - 320px) / (1800 - 320) * (36 - 20) + 20px ); // font-size = 36px when screen width = 1800px, then slow change to font-size = 20px when screen width = 320px
   font-weight: bold;
 }
 p{
@@ -79,15 +79,6 @@ img {
   padding-right: 0;
   padding-left: 0;
 }
-.row {
-  margin-right: 0px;
-  margin-left: 0px;
-}
-[class^='col-'] {
-  padding-left: 0;
-  padding-right: 0;
-
-}
 header [class^='col-'],
 footer [class^='col-'],
 .main-banner [class^='col-']{
@@ -100,6 +91,61 @@ footer [class^='col-'],
   height: 245px;
   width: 100%;
   padding: 40px;
+  &:after{
+    width: 380px;
+    height: 100%;
+    content: '';
+    position: absolute;
+    z-index: -30;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+  }
+  &:before{
+    width: 380px;
+    height: 100%;
+    content: '';
+    position: absolute;
+    z-index: -30;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+  }
+}
+.content-wrapper.bg-white{
+  &:after{
+    background-color: #ffffff;
+  }
+  &:before{
+    background-color: #ffffff;
+  }
+}
+.content-wrapper.bg-black{
+  &:after{
+    background-color: $black;
+  }
+  &:before{
+    background-color: $black;
+  }
+}
+.content-wrapper.bg-gray{
+  &:after{
+    background-color: $gray;
+  }
+  &:before{
+    background-color: $gray;
+  }
+}
+.content-wrapper.bg-yellow{
+  &:after{
+    background-color: $yellow;
+  }
+  &:before{
+    background-color: $yellow;
+  }
+}
+section{
+  overflow-x: hidden; // for content-wrapper's :before and :after
 }
 .height-2{
   height: 490px;
@@ -109,13 +155,25 @@ footer [class^='col-'],
 }
 
 
+/* Icons */
+.icon-circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc( (100vw - 320px) / (1800 - 320) * (35 - 28) + 28px );
+  height: calc( (100vw - 320px) / (1800 - 320) * (35 - 28) + 28px );
+  border-radius: 50%;
+  border: 1px solid;
+  i{
+    font-size: calc( (100vw - 320px) / (1800 - 320) * (15 - 13) + 13px );
+  }
+}
+
+
 /* Colors */
 
 .bg-white{
   background-color: #ffffff;
-}
-.bg-black p{
-  color: #ffffff;
 }
 .bg-gray{
   background-color: $gray;
@@ -125,6 +183,9 @@ footer [class^='col-'],
 }
 .bg-black{
   background-color: $black;
+}
+.bg-black p{
+  color: #ffffff;
 }
 .bg-white h2,
 .bg-white h3,
@@ -147,6 +208,41 @@ footer [class^='col-'],
 }
 .bg-white a:hover{
   color: $yellow;
+}
+.bg-black .icon-circle{
+  border-color: $yellow;
+  i{
+    color: $yellow;
+  }
+}
+.bg-white .icon-circle,
+.bg-gray .icon-circle,
+.bg-yellow .icon-circle{
+  border-color: $black;
+  i{
+    color: $black;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .content-wrapper{
+    &:after{
+      display: none;
+    }
+    &:before{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .height-2{
+    height: 245px;
+  }
+  .height-3{
+    height: 245px;
+  }
 }
 
 @media screen and (max-width: 575px) {

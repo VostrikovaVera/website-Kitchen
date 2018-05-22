@@ -13,35 +13,23 @@ footer{
     padding: 15px 40px 35px;
   }
   a {
-    color: $yellow;
+    font-size: calc( (100vw - 320px) / (1800 - 320) * (20 - 16) + 16px );
     &:hover{
       color: white;
     }
   }
-  .logo-holder{
-    width: 120px;
-  }
-  .socials-icon{
-    margin-right: 45px;
-  }
-  .phone{
-    color: white;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  footer{
-    .socials-icon{
-      margin-right: 30px;
+  .socials{
+    li{
+      margin-right: calc( (100vw - 320px) / (1800 - 320) * (70 - 30) + 30px );
     }
-    .logo-holder{
-      width: 100px;
+    &:last-child{
+      margin-right: 0;
     }
   }
 }
 
 @media screen and (max-width: 575px) {
-  header{
+  footer{
     .container-fluid{
       padding: 15px 20px 35px;
     }

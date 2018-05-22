@@ -8,13 +8,14 @@
   <title>Кулинарная студия «Кухня»</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="css/fontawesome-all.min.css"> -->
   <link rel="stylesheet" href="css/all.min.css">
 </head>
 <body>
   <header class="header bg-white">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-sm-auto col-xs-auto my-auto">
+      <div class="row no-gutters">
+        <div class="col-lg-3 col-auto my-auto">
           <ul class="socials">
               <li class="socials-icon">
                   <a href="https://vk.com/kyhnya_kharkov" target="_blank">
@@ -34,16 +35,16 @@
           </ul>
           <i class="show-menu fas fa-bars"></i>
         </div>
-        <div class="col-lg-2 col-sm-auto col-xs-auto mx-auto">
+        <div class="col-lg-2 col-auto mx-auto">
           <a class="logo" href="index.html">
             <img src="img/logo-black.png" alt="Кулинарная студия «Кухня»" class="h-100 logo">
           </a>
         </div>
-        <div class="col-lg-3 col-sm-auto col-xs-auto d-flex justify-content-end my-auto">
+        <div class="col-lg-3 col-auto d-flex justify-content-end my-auto">
           <a class="phone" href="tel:+380994751923">+ 38&ensp;(099)&ensp;475&ensp;19&ensp;23</a>
         </div>
       </div>
-      <div class="row">
+      <div class="row no-gutters">
         <div class="col-lg-8 mx-auto">
             <nav>
                 <ul class="menu d-flex">
@@ -61,10 +62,10 @@
   </header>
   <section class="main-banner">
     <div class="container">
-      <div class="row">
+      <div class="row no-gutters">
         <div class="col-lg-8 col-md-8 col-sm-12">
           <div class="main-banner-left">
-            <div class="heading-block content-wrapper">
+            <div class="content-wrapper heading-block bg-black">
               <div class="heading-title">
                 <h1>Кулинарные курсы</h1>
                 <h1><strong>И мастер-классы</strong></h1>
@@ -75,8 +76,10 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-4">
-          <div class="main-banner-right bg-yellow">
-            <img src="img/taras-banner.png" alt="Taras Klipin">
+          <div class="main-banner-right">
+            <div class="content-wrapper bg-yellow">
+              <img src="img/taras-banner.png" alt="Taras Klipin">
+            </div>
           </div>
         </div>
       </div>
@@ -84,9 +87,9 @@
   </section>
   <section class="schedule">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-6">
-          <div class="heading-block content-wrapper">
+      <div class="row no-gutters">
+        <div class="col-md-8">
+          <div class="content-wrapper heading-block bg-black">
             <div class="heading-title">
               <h2>Узнайте о наших</h2>
               <h2><strong>Ближайших событиях</strong></h2>
@@ -99,25 +102,34 @@
             </a>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-md-4 col-sm-6">
+          <div class="content-wrapper bg-gray schedule-card">
+            <div class="day"><span>Пятница</span><span>03.11.17</span></div>
+            <a class="event" href="master-class.html"><time><span>10:00</span></time>Бургеры (дети)</a>
+            <a class="event" href="master-class.html"><time><span>12:00</span></time>4 вкусных завтрака</a>
+            <a class="event" href="master-class.html"><time><span>11:00</span></time>Вечеринка</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="content-wrapper bg-white schedule-card">
+            <div class="day"><span>Пятница</span><span>03.11.17</span></div>
+            <a class="event" href="master-class.html"><time><span>10:00</span></time>Бургеры (дети)</a>
+            <a class="event" href="master-class.html"><time><span>12:00</span></time>4 вкусных завтрака</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 schedule-card">
           <div class="content-wrapper bg-gray"></div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-md-4 col-sm-6 schedule-card">
           <div class="content-wrapper bg-white"></div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-md-4 col-sm-6 schedule-card">
           <div class="content-wrapper bg-gray"></div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-md-4 col-sm-6 schedule-card">
           <div class="content-wrapper bg-white"></div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="content-wrapper bg-gray"></div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="content-wrapper bg-white"></div>
-        </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-md-4 col-sm-6 schedule-card">
           <div class="content-wrapper bg-gray"></div>
         </div>
       </div>
@@ -125,29 +137,81 @@
   </section>
   <section class="services">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-12">
-          <div class="content-wrapper height-3 bg-black"></div>
+      <div class="row no-gutters">
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="content-wrapper height-3 bg-pic-1"></div>
         </div>
         <div class="col-lg-8 col-md-12">
-          <div class="row">
-            <div class="col-lg-6 col-md-6">
-              <div class="content-wrapper bg-gray"></div>
+          <div class="row no-gutters">
+            <div class="col-lg-6 col-sm-6">
+              <div class="content-wrapper bg-gray main-card">
+                <div class="main-card-headline">
+                  <span class="icon-circle">
+                    <i class="far fa-calendar-alt"></i>
+                  </span>
+                  <h2>Мастер-классы</h2>
+                </div>
+                <p class="main-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...</p>
+                <a class="card-link-more" href="master-classes.html">Читать дальше &gt;</a>
+              </div>
             </div>
-            <div class="col-lg-6 col-md-6">
-              <div class="content-wrapper bg-black"></div>
+            <div class="col-lg-6 col-sm-6">
+              <div class="content-wrapper bg-black main-card">
+                <div class="main-card-headline">
+                  <span class="icon-circle">
+                    <i class="far fa-calendar-alt"></i>
+                  </span>
+                  <h2>Мастер-классы</h2>
+                </div>
+                <p class="main-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...</p>
+                <a class="card-link-more" href="master-classes.html">Читать дальше &gt;</a>
+              </div>
             </div>
-            <div class="col-lg-6 col-md-6">
-              <div class="content-wrapper bg-yellow"></div>
+            <div class="col-lg-6 col-sm-6">
+              <div class="content-wrapper bg-yellow main-card">
+                <div class="main-card-headline">
+                  <span class="icon-circle">
+                    <i class="far fa-calendar-alt"></i>
+                  </span>
+                  <h2>Мастер-классы</h2>
+                </div>
+                <p class="main-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...</p>
+                <a class="card-link-more" href="master-classes.html">Читать дальше &gt;</a>
+              </div>
             </div>
-            <div class="col-lg-6 col-md-6">
-              <div class="content-wrapper bg-white"></div>
+            <div class="col-lg-6 col-sm-6">
+              <div class="content-wrapper bg-white main-card">
+                <div class="main-card-headline">
+                  <span class="icon-circle">
+                    <i class="far fa-calendar-alt"></i>
+                  </span>
+                  <h2>Мастер-классы</h2>
+                </div>
+                <p class="main-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                <a class="card-link-more" href="master-classes.html">Читать дальше &gt;</a>
+              </div>
             </div>
-            <div class="col-lg-6 col-md-6">
-              <div class="content-wrapper bg-gray"></div>
+            <div class="col-lg-6 col-sm-6">
+              <div class="content-wrapper bg-gray main-card">
+                <div class="main-card-headline">
+                  <span class="icon-circle">
+                    <i class="far fa-calendar-alt"></i>
+                  </span>
+                  <h2>Мастер-классы</h2>
+                </div>
+                <p class="main-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...</p>
+                <a class="card-link-more" href="master-classes.html">Читать дальше &gt;</a>
+              </div>
             </div>
-            <div class="col-lg-6 col-md-6">
-              <div class="content-wrapper bg-black"></div>
+            <div class="col-lg-6 col-sm-6">
+              <div class="content-wrapper bg-black main-card">
+                <a class="link-all-services" href="#">
+                  <span class="icon-circle">
+                    <i class="fas fa-list-ul"></i>
+                  </span>
+                  <p>Посмотреть все услуги</p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -156,37 +220,22 @@
   </section>
   <section class="blog">
     <div class="container">
-      <div class="row">
+      <div class="row no-gutters">
         <div class="col-lg-8">
-          <div class="row">
+          <div class="row no-gutters">
             <div class="col-lg-12">
-              <div class="heading-block content-wrapper">
+              <div class="content-wrapper heading-block bg-black">
                 <div class="heading-title">
                   <h2>Читайте наш</h2>
                   <h2><strong>Кулинарный блог</strong></h2>
                 </div>
                 <a class="heading-link" href="#">
                   <span class="icon-circle">
-                    <i class="fas fa-newspaper"></i>
-                  </span>
-                  <span class="icon-circle">
-                    <i class="far fa-newspaper"></i>
-                  </span>
-                  <span class="icon-circle">
                     <i class="far fa-file-alt"></i>
                   </span>
                   <p>Наши новости</p>
                 </a>
                 <a class="heading-link" href="#">
-                  <span class="icon-circle">
-                    <i class="fa fa-lemon"></i>
-                  </span>
-                  <span class="icon-circle">
-                    <i class="far fa-lemon"></i>
-                  </span>
-                  <span class="icon-circle">
-                    <i class="fas fa-blender"></i>
-                  </span>
                   <span class="icon-circle">
                     <i class="fas fa-utensils"></i>
                   </span>
@@ -203,10 +252,10 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-12">
-          <div class="content-wrapper height-2 bg-black"></div>
+          <div class="content-wrapper height-2 bg-pic-2"></div>
         </div>
       </div>
-      <div class="row">
+      <div class="row no-gutters">
         <div class="col-lg-8">
           <div class="content-wrapper bg-black"></div>
         </div>
@@ -218,18 +267,18 @@
   </section>
   <section class="team">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <div class="heading-block content-wrapper">
+      <div class="row no-gutters">
+        <div class="col-md-8">
+          <div class="content-wrapper heading-block bg-black">
             <div class="heading-title">
               <h2>Наша прекрасная</h2>
               <h2><strong>Кулинарная команда</strong></h2>
             </div>
             <div class="heading-note">
               <span class="icon-circle">
-                <i class="fas fa-heart"></i>
+                <i class="fas fa-users"></i>
               </span>
-              <p>Кулинарная студия Кухня — это наш авторский проект, Тараса и Наташи Клипиных.<br><span>Мы старались создать уютное, домашнее пространство, где собирались бы единомышленники, друзья и просто хорошие люди. </span>Мы рады познакомить вас с нашей командой, с людьми, которые живут и горят этим проектом.</p>
+              <p>Кулинарная студия Кухня — это наш авторский проект, Тараса и Наташи Клипиных. Мы рады познакомить вас с нашей командой, с людьми, которые живут и горят этим проектом.</p>
             </div>
           </div>
         </div>
@@ -244,7 +293,7 @@
         </div>
         <div class="col-lg-4">
           <!-- Переделать content-wrapper на team-member-card -->
-            <div class="row">
+            <div class="row no-gutters">
               <div class="col-lg-12">
                 <!-- Переделать content-wrapper на team-member-card -->
                 <div class="content-wrapper bg-black"></div>
@@ -271,7 +320,7 @@
   </section>
   <section class="contacts-map">
     <div class="container">
-      <div class="row">
+      <div class="row no-gutters">
         <div class="col-lg-4">
           <!-- Компанент contacts на основе content-wrapper -->
           <div class="content-wrapper height-2 bg-yellow"></div>
@@ -283,20 +332,11 @@
       </div>
     </div>
   </section>
-
-
-
-
-
-
-
-
-
   <div class="footerfix"></div>
   <footer class="footer bg-black">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-sm-auto my-auto">
+      <div class="row no-gutters">
+        <div class="col-12 d-flex justify-content-center">
           <ul class="socials d-flex">
               <li class="socials-icon">
                   <a href="https://vk.com/kyhnya_kharkov" target="_blank">
@@ -314,16 +354,6 @@
                   </a>
               </li>
           </ul>
-        </div>
-        <div class="col-lg-2 col-sm-auto mx-auto">
-          <div class="logo-holder">
-            <a href="index.html">
-              <img src="img/logo-yellow.png" alt="Кулинарная студия «Кухня»" class="h-100 logo">
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-auto d-flex justify-content-end my-auto">
-          <a class="phone" href="tel:+380994751923">+ 38&ensp;(099)&ensp;475&ensp;19&ensp;23</a>
         </div>
       </div>
     </div>
