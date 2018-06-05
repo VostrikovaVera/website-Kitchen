@@ -56,8 +56,12 @@ h2{
 	font-size: calc( (100vw - 320px) / (1800 - 320) * (36 - 20) + 20px ); // font-size = 36px when screen width = 1800px, then slow change to font-size = 20px when screen width = 320px
   font-weight: bold;
 }
+h3{
+	font-size: calc( (100vw - 320px) / (1800 - 320) * (16 - 14) + 14px );
+  font-weight: bold;
+}
 p{
-  font-size: calc( (100vw - 320px) / (1800 - 320) * (14 - 12) + 12px );
+  font-size: 14px;
 }
 a{
 	display: block;
@@ -84,11 +88,15 @@ footer [class^='col-'],
 .main-banner [class^='col-']{
   height: auto;
 }
+section [class^='col-']{
+  display: flex;
+}
 
 /* Main settings for grid items (rectangles) */
 
 .content-wrapper{
-  height: 245px;
+  align-self: flex-end;
+  height: calc( (100vw - 320px) / (1800 - 320) * (245 - 210) + 210px );
   width: 100%;
   padding: 40px;
   &:after{
@@ -111,6 +119,9 @@ footer [class^='col-'],
     top: 0;
     bottom: 0;
   }
+}
+.row [class^='col-']:last-child .content-wrapper:after{
+  width: 1000px;
 }
 .content-wrapper.bg-white{
   &:after{
@@ -147,12 +158,6 @@ footer [class^='col-'],
 section{
   overflow-x: hidden; // for content-wrapper's :before and :after
 }
-.height-2{
-  height: 490px;
-}
-.height-3{
-  height: 735px;
-}
 
 
 /* Icons */
@@ -160,6 +165,7 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 28px;
   width: calc( (100vw - 320px) / (1800 - 320) * (35 - 28) + 28px );
   height: calc( (100vw - 320px) / (1800 - 320) * (35 - 28) + 28px );
   border-radius: 50%;
@@ -225,23 +231,36 @@ section{
 }
 
 
+// @media screen and (max-width: 1199px) {
+//   .content-wrapper{
+//     &:after{
+//       display: none;
+//     }
+//
+//   }
+// }
+
 @media screen and (max-width: 1200px) {
-  .content-wrapper{
-    &:after{
+  .d-none-1200 {
       display: none;
-    }
-    &:before{
-      display: none;
-    }
   }
 }
 
 @media screen and (max-width: 991px) {
-  .height-2{
-    height: 245px;
+  .d-none-991 {
+      display: none;
   }
-  .height-3{
-    height: 245px;
+}
+
+@media screen and (max-width: 925px) {
+  .d-none-925 {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 905px) {
+  .d-none-905 {
+      display: none;
   }
 }
 
@@ -251,18 +270,8 @@ section{
   }
 }
 
-
-
-
-
-
-
-
-
-// !!! блоки с новостями - двойная высота!
-// @media screen and (max-width: 991px) {
-//   .height-2,
-//   .height-3{
-//     height: 735px;
-//   }
-// }
+@media screen and (max-width: 450px) {
+  .d-none-450 {
+      display: none;
+  }
+}

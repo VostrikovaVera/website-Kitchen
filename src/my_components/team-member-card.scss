@@ -1,0 +1,73 @@
+@import 'variables';
+
+.team-member-card{
+  padding: 0 10px 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p{
+    display: inline-block;
+    font-size: calc( (100vw - 320px) / (1800 - 320) * (16 - 14) + 14px );
+  }
+  .name{
+    width: 42%;
+  }
+  .firstname{
+    font-size: calc( (100vw - 320px) / (1800 - 320) * (36 - 30) + 30px );
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .lastname{
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .avatar{
+    align-self: flex-end;
+    width: 50%;
+    padding-top: 15px;
+  }
+}
+.team-member-card.bg-black .lastname,
+.team-member-card.bg-black .firstname,{
+  color: $yellow;
+}
+
+@media screen and (max-width: 991px) {
+  .team-member-card{
+    .avatar{
+      width: 40%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team-member-card{
+    justify-content: space-around;
+    p{
+      display: block;
+    }
+    .avatar{
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .team-member-card{
+    .avatar{
+      width: 52%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .team-member-card{
+    .avatar{
+      width: 58%;
+    }
+  }
+}

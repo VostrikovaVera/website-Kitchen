@@ -3,12 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- <meta charset="utf-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
   <title>Кулинарная студия «Кухня»</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="css/fontawesome-all.min.css"> -->
+  <link rel="stylesheet" href="css/chocolat.css">
   <link rel="stylesheet" href="css/all.min.css">
 </head>
 <body>
@@ -49,7 +47,7 @@
             <nav>
                 <ul class="menu d-flex">
                   <li><a href="index.html">Главная</a></li>
-                  <li><a href="sсhedule.html">Расписание</a></li>
+                  <li><a href="schedule.html">Расписание</a></li>
                   <li><a href="services.html">Услуги</a></li>
                   <li><a href="blog.html">Блог</a></li>
                   <li><a href="gallery.html">Галерея</a></li>
@@ -70,7 +68,7 @@
                 <h1>Кулинарные курсы</h1>
                 <h1><strong>И мастер-классы</strong></h1>
               </div>
-              <p class="heading-text">Добро пожаловать в кулинарную студию КУХНЯ. Мы создали пространство для проведения увлекательного гастрономического досуга и создания кулинарных шедевров. У нас каждый гость сможет научиться чему-то новому, встретить единомышленников, отлично провести время, полакомиться приготовленными блюдами и, конечно, повысить свой "скилл" владения ножом и венчиком.<span> Мы стараемся максимально разнообразить ассортимент наших мастер-классов, чтобы каждый нашел интересную тематику для себя. Поверьте, под руководством наших шеф-поваров получаются только вкуснейшие шедевры!</span></p>
+              <p class="heading-text">Добро пожаловать в кулинарную студию КУХНЯ.<span class="d-none-450"> Мы создали пространство для проведения увлекательного гастрономического досуга и создания кулинарных шедевров.</span> У нас каждый гость сможет научиться чему-то новому, встретить единомышленников, отлично провести время, полакомиться приготовленными блюдами и, конечно, повысить свой "скилл" владения ножом и венчиком.<span class="d-none-925"> Мы стараемся максимально разнообразить ассортимент наших мастер-классов, чтобы каждый нашел интересную тематику для себя. Поверьте, под руководством наших шеф-поваров получаются только вкуснейшие шедевры!</span></p>
               <a class="heading-button" href="">УЗНАТЬ БОЛЬШЕ</a>
             </div>
           </div>
@@ -94,7 +92,7 @@
               <h2>Узнайте о наших</h2>
               <h2><strong>Ближайших событиях</strong></h2>
             </div>
-            <a class="heading-link" href="#">
+            <a class="heading-link" href="schedule.html">
               <span class="icon-circle">
                 <i class="far fa-calendar-alt"></i>
               </span>
@@ -105,32 +103,33 @@
         <div class="col-md-4 col-sm-6">
           <div class="content-wrapper bg-gray schedule-card">
             <div class="day"><span>Пятница</span><span>03.11.17</span></div>
-            <a class="event" href="master-class.html"><time><span>10:00</span></time>Бургеры (дети)</a>
-            <a class="event" href="master-class.html"><time><span>12:00</span></time>4 вкусных завтрака</a>
-            <a class="event" href="master-class.html"><time><span>11:00</span></time>Вечеринка</a>
+            <a class="event" href="master-class.html"><span class="event-time">10:00</span><span class="event-name">Бургеры (дети)</span></a>
+            <a class="event" href="master-class.html"><span class="event-time">12:00</span><span class="event-name">4 вкусных завтрака</span></a>
+            <a class="event" href="master-class.html"><span class="event-time">11:00</span><span class="event-name">Вечеринка</span></a>
           </div>
         </div>
         <div class="col-md-4 col-sm-6">
           <div class="content-wrapper bg-white schedule-card">
             <div class="day"><span>Пятница</span><span>03.11.17</span></div>
-            <a class="event" href="master-class.html"><time><span>10:00</span></time>Бургеры (дети)</a>
-            <a class="event" href="master-class.html"><time><span>12:00</span></time>4 вкусных завтрака</a>
+            <a class="event" href="master-class.html"><span class="event-time">10:00</span><span class="event-name">Бургеры (дети)</span></a>
+            <a class="event" href="master-class.html"><span class="event-time">12:00</span><span class="event-name">4 вкусных завтрака</span></a>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 schedule-card">
-          <div class="content-wrapper bg-gray"></div>
+          <div class="content-wrapper bg-gray">
+            <div class="day"><span>Пятница</span><span>03.11.17</span></div>
+            <a class="event" href="master-class.html"><span class="event-time">10:00</span><span class="event-name">Бургеры (дети)</span></a>
+            <a class="event" href="master-class.html"><span class="event-time">12:00</span><span class="event-name">4 вкусных завтрака</span></a>
+            <a class="event" href="master-class.html"><span class="event-time">11:00</span><span class="event-name">Вечеринка</span></a>
+          </div>
         </div>
         <div class="col-md-4 col-sm-6 schedule-card">
-          <div class="content-wrapper bg-white"></div>
-        </div>
-        <div class="col-md-4 col-sm-6 schedule-card">
-          <div class="content-wrapper bg-gray"></div>
-        </div>
-        <div class="col-md-4 col-sm-6 schedule-card">
-          <div class="content-wrapper bg-white"></div>
-        </div>
-        <div class="col-md-4 col-sm-6 schedule-card">
-          <div class="content-wrapper bg-gray"></div>
+          <div class="content-wrapper bg-white">
+            <div class="day"><span>Пятница</span><span>03.11.17</span></div>
+            <a class="event" href="master-class.html"><span class="event-time">10:00</span><span class="event-name">Бургеры (дети)</span></a>
+            <a class="event" href="master-class.html"><span class="event-time">12:00</span><span class="event-name">4 вкусных завтрака</span></a>
+            <a class="event" href="master-class.html"><span class="event-time">11:00</span><span class="event-name">Вечеринка</span></a>
+          </div>
         </div>
       </div>
     </div>
@@ -139,7 +138,7 @@
     <div class="container">
       <div class="row no-gutters">
         <div class="col-lg-4 d-none d-lg-block">
-          <div class="content-wrapper height-3 bg-pic-1"></div>
+          <div class="content-wrapper bg-pic-1"></div>
         </div>
         <div class="col-lg-8 col-md-12">
           <div class="row no-gutters">
@@ -147,65 +146,67 @@
               <div class="content-wrapper bg-gray main-card">
                 <div class="main-card-headline">
                   <span class="icon-circle">
-                    <i class="far fa-calendar-alt"></i>
+                    <i class="fas fa-utensil-spoon"></i>
                   </span>
-                  <h2>Мастер-классы</h2>
+                  <h2>Мастер-класс кулинарии</h2>
                 </div>
-                <p class="main-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...</p>
-                <a class="card-link-more" href="master-classes.html">Читать дальше &gt;</a>
+                <p class="crop-90-characters">Мастер-класс кулинарии — это три часа беспрерывного гастрономического познания. На протяжении мастер-класса каждому участнику выделяется индивидуальное рабочее место за общим столом. Под руководством нашего шеф-повара вы научитесь готовить три блюда, узнаете все об используемых ингредиентах, ознакомитесь со  всеми секретами приготовления, и конечно, сможете всё приготовленное съесть или забрать с собой в ланч-боксах и покрасоваться перед домочадцами.</p>
+                <a class="card-link-more" href="services.html#classes">Читать дальше &gt;</a>
               </div>
             </div>
             <div class="col-lg-6 col-sm-6">
               <div class="content-wrapper bg-black main-card">
                 <div class="main-card-headline">
                   <span class="icon-circle">
-                    <i class="far fa-calendar-alt"></i>
+                    <i class="fas fa-child"></i>
                   </span>
-                  <h2>Мастер-классы</h2>
+                  <h2>ДЕТСКИЙ МАСТЕР-КЛАСС</h2>
                 </div>
-                <p class="main-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...</p>
-                <a class="card-link-more" href="master-classes.html">Читать дальше &gt;</a>
+                <p class="crop-90-characters">Мы проводим кулинарные мастер-классы для ЮНЫХ поварят. Во время мастер-класса всем участникам выдаются поварские колпаки и фартуки. Детки самостоятельно, под руководством шеф-повара, готовят заявленные одно или два блюда. На мастер-классах мы не используем полуфабрикаты, если это пицца, паста или бургеры, то детки делают все собственноручно, начиная от замеса теста и т.д. В конце мастер-класса юные гурманы с удовольствием едят приготовленные блюда.</p>
+                <a class="card-link-more" href="services.html#kids-classes">Читать дальше &gt;</a>
               </div>
             </div>
             <div class="col-lg-6 col-sm-6">
               <div class="content-wrapper bg-yellow main-card">
                 <div class="main-card-headline">
                   <span class="icon-circle">
-                    <i class="far fa-calendar-alt"></i>
+                    <i class="fas fa-home"></i>
                   </span>
-                  <h2>Мастер-классы</h2>
+                  <h2>АРЕНДА СТУДИИ</h2>
                 </div>
-                <p class="main-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...</p>
-                <a class="card-link-more" href="master-classes.html">Читать дальше &gt;</a>
+                <p class="crop-90-characters">Мы с радостью предоставим пространство кулинарной студии для твоих гастрономических и не только мероприятий.
+У тебя намечается фото или видео съемка для стоков, портфолио, кулинарных передач и тд.? Проработка меню для заведения? Возможно, ты повар, который ищет пространство для проведения авторских мастер-классов? </p>
+                <a class="card-link-more" href="services.html#rent">Читать дальше &gt;</a>
               </div>
             </div>
             <div class="col-lg-6 col-sm-6">
               <div class="content-wrapper bg-white main-card">
                 <div class="main-card-headline">
                   <span class="icon-circle">
-                    <i class="far fa-calendar-alt"></i>
+                    <i class="fas fa-wine-glass"></i>
                   </span>
-                  <h2>Мастер-классы</h2>
+                  <h2>ГАСТРОНОМИЧЕСКАЯ ВЕЧЕРИНКА</h2>
                 </div>
-                <p class="main-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                <a class="card-link-more" href="master-classes.html">Читать дальше &gt;</a>
+                <p class="crop-90-characters">Намечается торжество? Мы приглашаем тебя и твою веселую компанию к нам в студию на вечеринку в формате кулинарного мастер-класса. Наша студия всегда рада тебе и твоим друзьям, будь то День рождения, детский праздник, корпоратив, тимбилдинг, юбилей, девичник, встреча друзей и т.д.</p>
+                <a class="card-link-more" href="services.html#gastro-party">Читать дальше &gt;</a>
               </div>
             </div>
             <div class="col-lg-6 col-sm-6">
               <div class="content-wrapper bg-gray main-card">
                 <div class="main-card-headline">
                   <span class="icon-circle">
-                    <i class="far fa-calendar-alt"></i>
+                    <i class="fas fa-birthday-cake"></i>
                   </span>
-                  <h2>Мастер-классы</h2>
+                  <h2>ДЕТСКИЙ ПРАЗДНИК</h2>
                 </div>
-                <p class="main-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...</p>
-                <a class="card-link-more" href="master-classes.html">Читать дальше &gt;</a>
+                <p class="crop-90-characters">Ищешь оригинальный формат детского торжества? Приглашаем тебя в кулинарную студию Кухня отметить детский праздник в формате кулинарного мастер-класса, на время которого, дети превратятся в юных кулинаров.
+ КАК ПРОХОДИТ ПРАЗДНИК? По приходу детей в студию на столах их ожидают поварские фартучки + колпачки и все необходимые ингредиенты для приготовления. Предварительно мы с вами выбираем блюда которые дети будут готовить. Все детки под руководством шеф повара, собственноручно готовят все блюда и УЧАСТВУЮТ во всех процессах приготовления (вымешивают тесто, раскатывают, выпекают, нарезают, смешивают, формируют готовые изделия и тд). </p>
+                <a class="card-link-more" href="services.html#kids-party">Читать дальше &gt;</a>
               </div>
             </div>
             <div class="col-lg-6 col-sm-6">
               <div class="content-wrapper bg-black main-card">
-                <a class="link-all-services" href="#">
+                <a class="link-all-services" href="services.html">
                   <span class="icon-circle">
                     <i class="fas fa-list-ul"></i>
                   </span>
@@ -221,99 +222,200 @@
   <section class="blog">
     <div class="container">
       <div class="row no-gutters">
-        <div class="col-lg-8">
-          <div class="row no-gutters">
-            <div class="col-lg-12">
-              <div class="content-wrapper heading-block bg-black">
-                <div class="heading-title">
-                  <h2>Читайте наш</h2>
-                  <h2><strong>Кулинарный блог</strong></h2>
-                </div>
-                <a class="heading-link" href="#">
-                  <span class="icon-circle">
-                    <i class="far fa-file-alt"></i>
-                  </span>
-                  <p>Наши новости</p>
-                </a>
-                <a class="heading-link" href="#">
-                  <span class="icon-circle">
-                    <i class="fas fa-utensils"></i>
-                  </span>
-                  <p>Рецепты</p>
-                </a>
-              </div>
+        <div class="col-lg-8 col-sm-6">
+          <div class="content-wrapper heading-block bg-black">
+            <div class="heading-title">
+              <h2>Читайте наш</h2>
+              <h2><strong>Кулинарный блог</strong></h2>
             </div>
-            <div class="col-lg-6 col-md-6">
-              <div class="content-wrapper bg-white"></div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-              <div class="content-wrapper bg-yellow"></div>
-            </div>
+            <a class="heading-link" href="blog.html#news">
+              <span class="icon-circle">
+                <i class="far fa-file-alt"></i>
+              </span>
+              <p>Наши новости</p>
+            </a>
+            <a class="heading-link" href="blog.html#video-recipes">
+              <span class="icon-circle">
+                <i class="fas fa-utensils"></i>
+              </span>
+              <p>Рецепты</p>
+            </a>
           </div>
         </div>
-        <div class="col-lg-4 col-md-12">
-          <div class="content-wrapper height-2 bg-pic-2"></div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="content-wrapper bg-black bg-pic-2 main-card">
+            <div class="main-card-headline">
+              <span class="icon-circle">
+                <i class="fas fa-utensils"></i>
+              </span>
+              <h2>Стейк из свинины</h2>
+            </div>
+            <p class="crop-90-characters">В этом видео Тарас рассказывает какое мясо подходит для стейка, как правильно жарить свиной стейк, как готовить овощной гарнир и белый соус к мясу.
+И все это быстро, легко, очень вкусно и, главное, - с минимумом грязной посуды!</p>
+            <a class="card-link-more" href="video.html">Перейти к рецепту &gt;</a>
+          </div>
         </div>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-8">
-          <div class="content-wrapper bg-black"></div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="content-wrapper bg-yellow main-card">
+            <div class="main-card-headline">
+              <span class="icon-circle">
+                <i class="fas fa-utensils"></i>
+              </span>
+              <h2>РАВИОЛИ С МОЦАРЕЛЛОЙ</h2>
+            </div>
+            <p class="crop-90-characters"></p>
+            <a class="card-link-more" href="video.html">Перейти к рецепту &gt;</a>
+          </div>
         </div>
-        <div class="col-lg-4">
-          <div class="content-wrapper bg-white"></div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="content-wrapper bg-white main-card">
+            <div class="main-card-headline">
+              <span class="icon-circle">
+                <i class="fas fa-utensils"></i>
+              </span>
+              <h2>Вкуснейший сендвич</h2>
+            </div>
+            <p class="crop-90-characters">Что приготовить на завтрак? Вопрос знакомый каждому :) В этом видео мы покажем тебе простой и очень вкусный рецепт сэндвича</p>
+            <a class="card-link-more" href="video.html">Перейти к рецепту &gt;</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="content-wrapper bg-yellow main-card">
+            <div class="main-card-headline">
+              <span class="icon-circle">
+                <i class="fas fa-utensils"></i>
+              </span>
+              <h2>Паста карбонара</h2>
+            </div>
+            <p class="crop-90-characters">В этом видео мы покажем как готовить настоящую итальянскую карбонару!</p>
+            <a class="card-link-more" href="video.html">Перейти к рецепту &gt;</a>
+          </div>
+        </div>
+        <div class="col-lg-8 col-sm-6">
+          <div class="content-wrapper bg-black bg-pic-3 main-card">
+            <div class="main-card-headline">
+              <span class="icon-circle">
+                <i class="far fa-file-alt"></i>
+              </span>
+              <h2>ИСПАНСКАЯ КУХНЯ</h2>
+            </div>
+            <p class="crop-150-characters">Хоть в нашей стране и нет сиесты, это совсем не повод не уметь готовить испанскую кухню.
+              Приглашаем вас окунуться в мир Испании и научиться готовить:
+              -Гаспачо томатный,
+              -Паэлья,
+              -Яичный флан (десерт).
+            </p>
+            <a class="card-link-more" href="master-class.html">Читать дальше &gt;</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="content-wrapper bg-white main-card">
+            <div class="main-card-headline">
+              <span class="icon-circle">
+                <i class="far fa-file-alt"></i>
+              </span>
+              <h2>ПАНАЗИЯ</h2>
+            </div>
+            <p class="crop-90-characters">По многочисленным просьбам мы добавили мастер-класс АЗИАТСКОЙ кухни.
+              Будем учиться готовить:
+               -Тяхон тори (рис жареный с курицей),
+              -Кокосовый суп,
+              - Курица гарам масала.
+              </p>
+            <a class="card-link-more" href="master-class.html">Читать дальше &gt;</a>
+          </div>
+        </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="team">
+  <section class="team" id="team">
     <div class="container">
       <div class="row no-gutters">
-        <div class="col-md-8">
+        <div class="col-lg-8 col-md-6 col-sm-12">
           <div class="content-wrapper heading-block bg-black">
             <div class="heading-title">
               <h2>Наша прекрасная</h2>
-              <h2><strong>Кулинарная команда</strong></h2>
+              <h2><strong><span class="d-none-905">Кулинарная</span> команда</strong></h2>
             </div>
             <div class="heading-note">
               <span class="icon-circle">
                 <i class="fas fa-users"></i>
               </span>
-              <p>Кулинарная студия Кухня — это наш авторский проект, Тараса и Наташи Клипиных. Мы рады познакомить вас с нашей командой, с людьми, которые живут и горят этим проектом.</p>
+              <p><span class="d-none d-sm-inline d-md-none d-lg-inline">Кулинарная студия Кухня — это наш авторский проект, Тараса и Наташи Клипиных. </span> Мы рады познакомить вас с нашей командой, с людьми, которые живут и горят этим проектом.</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <!-- Переделать content-wrapper на team-member-card -->
-          <div class="content-wrapper bg-yellow"></div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="content-wrapper bg-yellow team-member-card">
+            <div class="name"><p class="firstname">Тарас</p><p class="lastname">Клипин</p><p>Основатель проекта, бренд-шеф студии</p></div>
+            <div class="avatar"><img src="img/taras-klipin.png" alt=""></div>
+          </div>
         </div>
-        <div class="col-lg-8">
-          <!-- Тут будет слайдер
-          Переделать content-wrapper на slider -->
-          <div class="content-wrapper height-2 bg-yellow"></div>
-        </div>
-        <div class="col-lg-4">
-          <!-- Переделать content-wrapper на team-member-card -->
-            <div class="row no-gutters">
-              <div class="col-lg-12">
-                <!-- Переделать content-wrapper на team-member-card -->
-                <div class="content-wrapper bg-black"></div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-8 d-none d-lg-block">
+          <div class="content-wrapper bg-yellow slider-team">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <img class="d-block img-fluid" src="img/slider-photo1.png" alt="Команда - Кулинарная студия 'Кухня'">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block img-fluid" src="img/slider-photo2.jpg" alt="Команда - Кулинарная студия 'Кухня'">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block img-fluid" src="img/slider-photo3.jpg" alt="Команда - Кулинарная студия 'Кухня'">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block img-fluid" src="img/slider-photo4.jpg" alt="Команда - Кулинарная студия 'Кухня'">
+                </div>
               </div>
-              <div class="col-lg-12">
-                <!-- Переделать content-wrapper на team-member-card -->
-                <div class="content-wrapper bg-yellow"></div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="row no-gutters">
+            <div class="col-lg-12 col-md-6 col-sm-12">
+              <div class="content-wrapper bg-black team-member-card">
+                <div class="name"><p class="firstname">Натали</p><p class="lastname">Клипина</p><p>Основатель проекта, управляющая</p></div>
+                <div class="avatar"><img src="img/taras-klipin.png" alt=""></div>
               </div>
             </div>
+            <div class="col-lg-12 col-md-6 col-sm-12">
+              <div class="content-wrapper bg-yellow team-member-card">
+                <div class="name"><p class="firstname">Алина</p><p class="lastname">Колодяжная</p><p>Администратор</p></div>
+                <div class="avatar"><img src="img/taras-klipin.png" alt=""></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-4">
-          <!-- Переделать content-wrapper на team-member-card -->
-          <div class="content-wrapper bg-black"></div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="content-wrapper bg-black team-member-card">
+            <div class="name"><p class="firstname">Саша</p><p class="lastname"></p><p>Шеф-повар</p></div>
+            <div class="avatar"><img src="img/taras-klipin.png" alt=""></div>
+          </div>
         </div>
-        <div class="col-lg-4">
-          <!-- Переделать content-wrapper на team-member-card -->
-          <div class="content-wrapper bg-yellow"></div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="content-wrapper bg-yellow team-member-card">
+            <div class="name"><p class="firstname">София</p><p class="lastname"></p><p>Шеф-кондитер</p></div>
+            <div class="avatar"><img src="img/taras-klipin.png" alt=""></div>
+          </div>
         </div>
-        <div class="col-lg-4">
-          <div class="content-wrapper bg-black"></div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="content-wrapper bg-black team-member-card">
+            <div class="name"><p><span class="lastname">Наша команда постоянно растет...</span></p></div>
+          </div>
         </div>
       </div>
     </div>
@@ -322,12 +424,29 @@
     <div class="container">
       <div class="row no-gutters">
         <div class="col-lg-4">
-          <!-- Компанент contacts на основе content-wrapper -->
-          <div class="content-wrapper height-2 bg-yellow"></div>
+          <div class="content-wrapper bg-yellow contacts">
+            <a class="contact-link" href="https://www.google.ru/maps/@49.9927776,36.2375498,18.25z" target="_blank">
+              <span class="icon-circle">
+                <i class="fas fa-map-pin"></i>
+              </span>
+              <p>г. Харьков,<br>пер. Воробьева 9/11</p>
+            </a>
+            <a class="contact-link" href="mailto:kyhnya@kyhnya.com">
+              <span class="icon-circle">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <p>kyhnya@kyhnya.com</p>
+            </a>
+            <a class="contact-link" href="tel:+380994751923">
+              <span class="icon-circle">
+                <i class="fas fa-phone"></i>
+              </span>
+              <p>+ 38&ensp;(099)&ensp;475&ensp;19&ensp;23</p>
+            </a>
+          </div>
         </div>
-        <div class="col-lg-8">
-          <!-- Переделать content-wrapper на map -->
-          <div class="content-wrapper height-2 bg-black"></div>
+        <div class="col-lg-8 d-none d-lg-block">
+          <div class="content-wrapper map"></div>
         </div>
       </div>
     </div>
@@ -358,10 +477,8 @@
       </div>
     </div>
   </footer>
-
-
-
   <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/all.min.js"></script>
 </body>
 </html>

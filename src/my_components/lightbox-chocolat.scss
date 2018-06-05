@@ -1,0 +1,40 @@
+@import 'variables';
+
+.chocolat-wrapper{
+  .chocolat-overlay {
+    background-color: #000000;
+    opacity: 0.6;
+  }
+  .chocolat-bottom{
+    display: none;
+  }
+  .chocolat-right{
+    width: 30px;
+    height: 30px;
+    right: 2%;
+    top: 55.5%;
+    border-top: 2px solid $yellow;
+    border-right: 2px solid $yellow;
+    transform: rotate(45deg);
+  }
+  .chocolat-left{
+    @extend.chocolat-right;
+    left: 2%;
+    transform: rotate(225deg);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .chocolat-wrapper{
+    .chocolat-right{
+      width: 22px;
+      height: 22px;
+      right: 1.5%;
+    }
+    .chocolat-left{
+      width: 22px;
+      height: 22px;
+      left: 1.5%;
+    }
+  }
+}

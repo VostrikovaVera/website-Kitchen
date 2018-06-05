@@ -13,12 +13,25 @@
   .event{
     margin-top: 6%;
     font-size: 14px;
+    &:hover .event-name{
+      border-bottom: none;
+    }
   }
-  time{
-    padding: 7px 3.5%;
+  .event-time{
     margin-right: 10px;
     font-size: 16px;
-    color: $yellow;
-    background-color: $black;
+    color: $black;
+    font-weight: bold;
+    border: none;
+  }
+  .event-name{
+    padding-bottom: 2px;
+    border-bottom: 2px solid $yellow;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .schedule-card .event {
+      margin-top: 3%;
   }
 }

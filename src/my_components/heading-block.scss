@@ -55,7 +55,7 @@
     align-items: center;
     color: #ffffff;
     p{
-      width: 93%;
+      width: 84%;
       margin-left: 2%;
     }
   }
@@ -76,7 +76,7 @@
   .heading-text{
     color: #ffffff;
     padding-left: calc( (100vw - 320px) / (1800 - 320) * (47 - 15) + 15px );
-  	font-size: calc( (100vw - 320px) / (1800 - 320) * (16 - 12) + 12px );
+  	font-size: calc( (100vw - 320px) / (1800 - 320) * (16 - 14) + 14px );
   }
 }
 .schedule{
@@ -100,12 +100,16 @@
     height: auto;
   }
 }
-
-@media screen and (max-width: 900px) {
-  .heading-text{
-    span {
-        display: none;
+.wide-heading{
+  .heading-block{
+    background: url(../img/mc-banner.png) no-repeat;
+    background-position: 58% 0;
+    .heading-note{
+      margin-top: 30px;
     }
+  }
+  .content-wrapper{
+    height: auto;
   }
 }
 
