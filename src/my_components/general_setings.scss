@@ -1,0 +1,277 @@
+@import 'variables';
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/GothamPro-Bold.eot');
+    src: url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamPro-Bold.woff') format('woff'),
+        url('../fonts/GothamPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/GothamPro-Light.eot');
+    src: url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamPro-Light.woff') format('woff'),
+        url('../fonts/GothamPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/GothamPro-Medium.eot');
+    src: url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamPro-Medium.woff') format('woff'),
+        url('../fonts/GothamPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+html,
+body,
+h1, h2, h3, h4, h5, h6,
+ul,
+li,
+p,
+img{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+	display: block;
+}
+html {
+    height: 100%;
+}
+body {
+    position: relative; // for footer at bottom
+    min-height: 100%;
+    font-family: 'Gotham Pro', sans-serif;
+		font-weight: 300;
+		background-color: $black;
+}
+h2{
+	font-size: calc( (100vw - 320px) / (1800 - 320) * (36 - 20) + 20px ); // font-size = 36px when screen width = 1800px, then slow change to font-size = 20px when screen width = 320px
+  font-weight: bold;
+}
+h3{
+	font-size: calc( (100vw - 320px) / (1800 - 320) * (16 - 14) + 14px );
+  font-weight: bold;
+}
+p{
+  font-size: 14px;
+}
+a{
+	display: block;
+  font-size: calc( (100vw - 320px) / (1800 - 320) * (16 - 14) + 14px );
+  font-weight: 500;
+	&:hover{
+		text-decoration: none;
+	}
+}
+img {
+	border-style: none;
+	width: 100%;
+}
+
+/* Bootstrap margin and paddings */
+
+.container,
+.container-fluid{
+  padding-right: 0;
+  padding-left: 0;
+}
+header [class^='col-'],
+footer [class^='col-'],
+.main-banner [class^='col-']{
+  height: auto;
+}
+section [class^='col-']{
+  display: flex;
+}
+
+/* Main settings for grid items (rectangles) */
+
+.content-wrapper{
+  align-self: flex-end;
+  height: calc( (100vw - 320px) / (1800 - 320) * (245 - 210) + 210px );
+  width: 100%;
+  padding: 40px;
+  &:after{
+    width: 380px;
+    height: 100%;
+    content: '';
+    position: absolute;
+    z-index: -30;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+  }
+  &:before{
+    width: 380px;
+    height: 100%;
+    content: '';
+    position: absolute;
+    z-index: -30;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+  }
+}
+.row [class^='col-']:last-child .content-wrapper:after{
+  width: 1000px;
+}
+.content-wrapper.bg-white{
+  &:after{
+    background-color: #ffffff;
+  }
+  &:before{
+    background-color: #ffffff;
+  }
+}
+.content-wrapper.bg-black{
+  &:after{
+    background-color: $black;
+  }
+  &:before{
+    background-color: $black;
+  }
+}
+.content-wrapper.bg-gray{
+  &:after{
+    background-color: $gray;
+  }
+  &:before{
+    background-color: $gray;
+  }
+}
+.content-wrapper.bg-yellow{
+  &:after{
+    background-color: $yellow;
+  }
+  &:before{
+    background-color: $yellow;
+  }
+}
+section{
+  overflow-x: hidden; // for content-wrapper's :before and :after
+}
+
+
+/* Icons */
+.icon-circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 28px;
+  width: calc( (100vw - 320px) / (1800 - 320) * (35 - 28) + 28px );
+  height: calc( (100vw - 320px) / (1800 - 320) * (35 - 28) + 28px );
+  border-radius: 50%;
+  border: 1px solid;
+  i{
+    font-size: calc( (100vw - 320px) / (1800 - 320) * (15 - 13) + 13px );
+  }
+}
+
+
+/* Colors */
+
+.bg-white{
+  background-color: #ffffff;
+}
+.bg-gray{
+  background-color: $gray;
+}
+.bg-yellow{
+  background-color: $yellow;
+}
+.bg-black{
+  background-color: $black;
+}
+.bg-black p{
+  color: #ffffff;
+}
+.bg-white h2,
+.bg-white h3,
+.bg-white p,
+.bg-white a,
+.bg-gray h2,
+.bg-gray h3,
+.bg-gray p,
+.bg-gray a,
+.bg-yellow h2,
+.bg-yellow h3,
+.bg-yellow p,
+.bg-yellow a{
+  color: $black;
+}
+.bg-black h2,
+.bg-black h3,
+.bg-black a{
+  color: $yellow;
+}
+.bg-white a:hover{
+  color: $yellow;
+}
+.bg-black .icon-circle{
+  border-color: $yellow;
+  i{
+    color: $yellow;
+  }
+}
+.bg-white .icon-circle,
+.bg-gray .icon-circle,
+.bg-yellow .icon-circle{
+  border-color: $black;
+  i{
+    color: $black;
+  }
+}
+
+
+// @media screen and (max-width: 1199px) {
+//   .content-wrapper{
+//     &:after{
+//       display: none;
+//     }
+//
+//   }
+// }
+
+@media screen and (max-width: 1200px) {
+  .d-none-1200 {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .d-none-991 {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .d-none-925 {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 905px) {
+  .d-none-905 {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .content-wrapper{
+    padding: 35px 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .d-none-450 {
+      display: none;
+  }
+}

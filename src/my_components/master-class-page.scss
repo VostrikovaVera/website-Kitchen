@@ -2,74 +2,139 @@
 
 .master-class{
   background-color: #ffffff;
-}
-.mc-description{
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  & > *{
-    margin-top: 15px;
+  .mc-description{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    & > *{
+      margin-top: 15px;
+    }
+    p:first-child{
+      margin-top: 0;
+    }
   }
-  p:first-child{
-    margin-top: 0;
+  .mc-description-button{
+    align-self: center;
+    width: fit-content;
+    color: $black;
+    margin-top: 40px;
+    padding: calc( (100vw - 320px) / (1800 - 320) * (15 - 10) + 10px ) calc( (100vw - 320px) / (1800 - 320) * (40 - 25) + 25px );
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: calc( (100vw - 320px) / (1800 - 320) * (14 - 12) + 12px );
+    background-color: #f1ce39;
+    &:hover{
+      background-color: #f9dd65;
+    }
+  }
+  .will-cook{
+    h3{
+      margin-bottom: 5px;
+    }
+  }
+  .meal i{
+    margin-right: 10px;
+  }
+  .mc-info{
+    display: flex;
+    align-items: center;
+    p{
+      margin-left: 10px;
+    }
+  }
+  .mc-image-wrapper1{
+    padding: 40px;
+  }
+  .mc-image-wrapper2{
+    padding: 0 40px 40px;
   }
 }
-.mc-description-button{
-  align-self: center;
-  width: fit-content;
-  color: $black;
-  margin-top: 40px;
-  padding: calc( (100vw - 320px) / (1800 - 320) * (15 - 10) + 10px ) calc( (100vw - 320px) / (1800 - 320) * (40 - 25) + 25px );
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: calc( (100vw - 320px) / (1800 - 320) * (14 - 12) + 12px );
-  background-color: #f1ce39;
-  &:hover{
-    background-color: #f9dd65;
+.service{
+  .mc-description{
+    min-height: 550px;
+  }
+  .rent-phone{
+    display: inline-block;
+    color: $black;
+    font-size: inherit;
+  }
+  .service-image-wrapper{
+    padding: 20px;
+  }
+  .service-image-wrapper-1{
+    padding: 0 20px;
+    margin-top: 40px;
+  }
+  .service-image-wrapper-2{
+    padding: 0 20px;
   }
 }
-.will-cook{
-  h3{
-    margin-bottom: 5px;
+
+@media screen and (max-width: 1200px) {
+  .service{
+    .container-fluid{
+      padding: 20px;
+    }
+    .mc-description{
+      padding: 20px;
+    }
   }
-}
-.meal i{
-  margin-right: 10px;
-}
-.mc-info{
-  display: flex;
-  align-items: center;
-  p{
-    margin-left: 10px;
-  }
-}
-.mc-image-wrapper1{
-  padding: 40px;
-}
-.mc-image-wrapper2{
-  padding: 0 40px 40px;
 }
 
 @media screen and (max-width: 991px) {
-  .mc-image-wrapper1{
-    padding: 0 20px 40px 40px;
+  .master-class{
+    .mc-image-wrapper1{
+      padding: 0 20px 40px 40px;
+    }
+    .mc-image-wrapper2{
+      padding: 0 40px 40px 20px;
+    }
   }
-  .mc-image-wrapper2{
-    padding: 0 40px 40px 20px;
+  .service{
+    .mc-description{
+      min-height: unset;
+    }
+    .service-image-wrapper-1,
+    .service-image-wrapper-2{
+      margin-top: 0;
+      padding: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .service{
+    .service-image-wrapper,
+    .service-image-wrapper-1,
+    .service-image-wrapper-2{
+      padding: 10px;
+    }
   }
 }
 
 @media screen and (max-width: 575px) {
-  .mc-description{
-    padding: 20px;
+  .master-class{
+    .mc-description{
+      padding: 20px;
+    }
+    .mc-description-button{
+      margin-top: 20px;
+    }
+    .mc-image-wrapper1{
+      padding: 0 20px 20px 20px;
+    }
+    .mc-image-wrapper2{
+      padding: 0 20px 20px 20px;
+    }
   }
-  .mc-description-button{
-    margin-top: 20px;
-  }
-  .mc-image-wrapper1{
-    padding: 0 20px 20px 20px;
-  }
-  .mc-image-wrapper2{
-    padding: 0 20px 20px 20px;
+  .service{
+    .container-fluid{
+      padding: 0;
+    }
+    .service-image-wrapper,
+    .service-image-wrapper-1,
+    .service-image-wrapper-2{
+      padding: 0 10px 10px 10px;
+    }
   }
 }

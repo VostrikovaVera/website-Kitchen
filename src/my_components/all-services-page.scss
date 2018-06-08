@@ -1,0 +1,44 @@
+@import 'variables';
+
+.all-services{
+  .container-fluid{
+    padding: 0 20px
+  }
+  [class^='col-']{
+    padding: 15px 20px;
+  }
+  .service-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &:hover img{
+      filter: none;
+    }
+    img {
+      filter: grayscale(0.9);
+    }
+    &:hover h3{
+      color: $yellow;
+    }
+  }
+  h3{
+    font-size: calc( (100vw - 320px) / (1800 - 320) * (18 - 16) + 16px );
+    text-transform: uppercase;
+    margin-top: 15px;
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .all-services{
+    .container-fluid{
+      padding: 0;
+    }
+    [class^='col-']{
+      padding: 10px 20px;
+    }
+    h3{
+      margin-top: 10px;
+    }
+  }
+}
